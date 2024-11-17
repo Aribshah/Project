@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appointment Details</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="appointment-background">
+    <div class="shape star1"></div>
+    <div class="shape star2"></div>
+
+    <div class="box-container">
+        <h2 id="greeting"></h2>
+        <div id="appointmentDetails"></div>
+        <div id="adminOptions" style="display: none;">
+            <button id="editDetailsButton" class="option-button">Change User Details</button>
+            <button id="backButton" class="option-button">Back to Home</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('backButton').onclick = () => {
+            sessionStorage.clear();
+            window.location.href = 'index.html';
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
